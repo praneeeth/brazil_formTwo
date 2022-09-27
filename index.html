@@ -555,7 +555,7 @@
             var data = {
                 // "name": document.getElementById("name").value,
                 // "email": document.getElementById("email").value,
-                "payment-type": document.getElementById("country").value,
+                "payment": document.getElementById("country").value,
                 "games": document.getElementById("games").value,
                 //"phone": document.getElementById("phone").value,
             }
@@ -570,7 +570,7 @@
             const message = document.getElementById("user-message")
             const submit = document.getElementById("submit-button")
             // console.log(message.value, "Message value after submitting")
-            if (data["payment-type"] === "null" || data.games === "null" ) {
+            if (data["payment"] === "null" || data.games === "null" ) {
                 // if (data.name.length == 0) {
                 //     document.getElementById("invalid-message").innerHTML = language == "pt" ? "Nama wajib diisi untuk terhubung ke Agen Kami!" : "Name is required to connect an agent!"
                 //     name.placeholder = language == "pt" ? 'Nama wajib diisi untuk terhubung ke Agen Kami' : "Name is required to connect an agent"
@@ -820,30 +820,14 @@
             height: 25px;" class="center" name="country" id="country">
                 <option id="product-option" value="null" disabled selected></option>
             </select>
-            <!-- Pilih Saluran pembarayan yang Anda inginkan -->
+            
             <br>
             
-            <!-- Silakan pilih produk/game nya -->
+            
             <br>
             <div id="offline-message">
             </div> 
-            <!-- <input type="file" id="attachment" name="filename" onchange="fileUploaded()"> -->
-            <!-- <div class="image-upload">
-                <input type="file" name="" id="logo" onchange="fileValue(this)">
-                <label for="logo" class="upload-field" id="file-label">
-                    <div class="file-thumbnail">
-                        <img id="image-preview" src="https://www.btklsby.go.id/images/placeholder/basic.png" alt="">
-                        <h3 id="filename">
-                            Drag and Drop
-                        </h3>
-                        <p>Supports JPG, PNG, SVG</p>
-                    </div>
-                </label>
-            </div> -->
-            <!-- <h6 id="attachment-header">
-                Attachments<sup>*</sup>
-            </h6>
-            <input type="file" class="form-control input-field" style="height: 30px;" id="customFile" onchange="fileUpload()"/> -->
+            
             <input type="button" value="Enviar" id="submit-button" onclick="submit()"
                 style="max-width: 60%;margin: 15px auto;background-color: #385072;color: #ffffff"
                 class="btn btn-primary center" />
